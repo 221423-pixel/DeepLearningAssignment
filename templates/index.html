@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ActionSense AI | Human Action Recognition</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <div class="app-container">
+        <header class="app-header">
+            <div class="logo">
+                <i class="fa-solid fa-brain"></i>
+                <span>DeepLearning Assignment </span>
+            </div>
+            <p class="subtitle">Advanced CNN + LSTM Action Recognition</p>
+        </header>
+
+        <main class="main-content">
+            <div class="card upload-card">
+                <div class="card-header">
+                    <h2><i class="fa-solid fa-image"></i> Analyze Image</h2>
+                    <p>Upload an image to identify the human action.</p>
+                </div>
+                
+                <div class="upload-area" id="dropZone">
+                    <input type="file" id="imageInput" accept="image/*" hidden>
+                    <div class="upload-placeholder" id="uploadPlaceholder">
+                        <div class="icon-circle">
+                            <i class="fa-solid fa-cloud-arrow-up"></i>
+                        </div>
+                        <p class="primary-text">Click or Drag & Drop to Upload</p>
+                        <p class="secondary-text">Supports JPG, PNG, JPEG</p>
+                    </div>
+                    <div class="preview-container hidden" id="previewContainer">
+                        <img id="imagePreview" src="" alt="Preview">
+                        <button class="remove-btn" id="removeBtn" title="Remove Image">
+                            <i class="fa-solid fa-times"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <button id="predictBtn" class="primary-btn" disabled>
+                    <span>Analyze Action</span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+            </div>
+
+            <div class="card result-card hidden" id="resultCard">
+                <div class="card-header">
+                    <h2><i class="fa-solid fa-square-poll-vertical"></i> Analysis Results</h2>
+                </div>
+                
+                <div class="prediction-main">
+                    <div class="prediction-badge">
+                        <span class="label">Detected Action</span>
+                        <h3 id="actionName">Running</h3>
+                    </div>
+                    <div class="confidence-meter">
+                        <div class="meter-header">
+                            <span>Confidence Score</span>
+                            <span id="confidenceValue">98.5%</span>
+                        </div>
+                        <div class="progress-bar-bg">
+                            <div class="progress-bar-fill" id="confidenceBar" style="width: 0%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="details-section">
+                    <button class="accordion-btn" id="detailsToggle">
+                        <span>View Detailed Probabilities</span>
+                        <i class="fa-solid fa-chevron-down" id="toggleIcon"></i>
+                    </button>
+                    <div class="accordion-content" id="detailsContent">
+                        <ul class="probability-list" id="probabilityList">
+                            <!-- Items will be injected here -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="app-footer">
+            <p>&copy; 2025 ActionSense AI. Powered by TensorFlow & Flask.</p>
+        </footer>
+    </div>
+
+    <!-- Loading Overlay -->
+    <div class="loading-overlay hidden" id="loadingOverlay">
+        <div class="loader-content">
+            <div class="spinner"></div>
+            <h3>Analyzing Image...</h3>
+            <p>Our neural network is processing the visual data.</p>
+        </div>
+    </div>
+
+    <script src="/static/js/script.js"></script>
+</body>
+</html>
