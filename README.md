@@ -89,7 +89,17 @@ The model uses a hybrid approach:
 
 ## 📸 Screenshots
 
-*(Add screenshots of your application here)*
+
+<img width="975" height="482" alt="image" src="https://github.com/user-attachments/assets/5876ebff-9ced-40b0-8400-b8aa7e26610d" />
+<img width="975" height="586" alt="image" src="https://github.com/user-attachments/assets/73e21953-fe45-446d-af38-307e9e52fe8f" />
+<img width="975" height="556" alt="image" src="https://github.com/user-attachments/assets/8e3bfbff-3274-47f7-9137-471340bb871f" />
+<img width="975" height="612" alt="image" src="https://github.com/user-attachments/assets/5645a89a-8f74-40b0-8ead-17b99d235296" />
+<img width="975" height="485" alt="image" src="https://github.com/user-attachments/assets/e0e2fce7-5bee-4245-8dc0-e0a0da882a91" />
+<img width="975" height="596" alt="image" src="https://github.com/user-attachments/assets/c98c80ee-b4e8-4cb9-95d7-3491507984ce" />
+<img width="975" height="562" alt="image" src="https://github.com/user-attachments/assets/15b69d0e-9992-42a7-b97b-f2646b2c18e9" />
+<img width="975" height="554" alt="image" src="https://github.com/user-attachments/assets/eb0d2c52-8cc3-4f18-8a2b-1fb1ac443032" />
+<img width="975" height="568" alt="image" src="https://github.com/user-attachments/assets/6cf0054d-0687-4023-aedf-fc788c8e16e8" />
+
 
 ## 🤝 Contributing
 
